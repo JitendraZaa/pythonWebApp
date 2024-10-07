@@ -23,4 +23,44 @@ limitations under the License.
 
 import streamlit as st
 
-st.title('Rudra Zaa') 
+from forms.contact import contact_form
+
+@st.dialog("Contact Me")
+def show_contact_form():
+    contact_form()
+
+# --- HERO SECTION ---
+col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
+with col1:
+    st.image("./assets/JZProfile.jpeg", width=230)
+
+with col2:
+    st.title("Jitendra Zaa", anchor=False)
+    st.write(
+        "Salesfprce CTA."
+    )
+    if st.button("✉️ Contact Me"):
+        show_contact_form()
+
+# --- EXPERIENCE & QUALIFICATIONS ---
+st.write("\n")
+st.subheader("Experience & Qualifications", anchor=False)
+st.write(
+    """
+    - 15+ years in Salesforce, CTA
+    - Java, Python, C#
+    - Devops Expert
+    """
+)
+
+# --- SKILLS ---
+st.write("\n")
+st.subheader("Hard Skills", anchor=False)
+st.write(
+    """
+    - Programming: Python (Scikit-learn, Pandas), SQL, VBA
+    - Data Visualization: PowerBi, MS Excel, Plotly
+    - Modeling: Logistic regression, linear regression, decision trees
+    - Databases: Postgres, MongoDB, MySQL
+    """
+)

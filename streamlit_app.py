@@ -54,6 +54,10 @@ pg = st.navigation(
     }
 )
 
+# --- SHARED ON ALL PAGES ---
+st.logo("assets/Shivasoft_logo.jpeg")
+st.sidebar.markdown("Made with ❤️ by [JZ](https://jitendrazaa.com)")
+
 # --- Run Navigation ---
 pg.run() 
  
