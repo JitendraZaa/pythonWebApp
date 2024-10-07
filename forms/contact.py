@@ -27,8 +27,8 @@ import streamlit as st
 import requests  # pip install requests
 
 # Setup Woobehook using Pabbly Connect - https://www.pabbly.com/connect-onetime/
-# WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
-WEBHOOK_URL = 'https://Jitendrazaa.com'
+
+WEBHOOK_URL = st.secrets["WEBHOOK_URL"] 
 
 
 def is_valid_email(email):

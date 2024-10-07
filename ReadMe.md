@@ -17,3 +17,12 @@ pip install pandas requests
 ```bash
 streamlit run streamlit_app.py
 ```
+
+## Other Details
+1. Get module version details in pip
+
+Example - pandas module version details
+
+```bash
+pip freeze | grep pandas
+```
